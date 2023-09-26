@@ -5,7 +5,7 @@ $(document).ready(function(){
    $("i").click(function() {
     var timeId = this.parentElement.parentElement.id;
     var description = this.parentElement.parentElement.children[1].value;
-   });
+   
 //saves the description and the time slot to local storage
 localStorage.setItem(timeId, description)
   });
@@ -35,4 +35,5 @@ for (var i=9; i < 18; i++) {
   var headerDat = document.getElementById("currentDay")
   
   headerDat.textContent = todaysDat;
+  });
 });
